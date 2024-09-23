@@ -3,7 +3,7 @@
 export default function Homepage6() {
   return (
     <div className="w-full p-16 ">
-      <div className="bg-green-100 p-12 md:p-8 rounded-3xl mb-8 relative overflow-hidden">
+      <div className="bg-green-100 p-12 md:p-4 rounded-3xl mb-4 relative overflow-hidden">
         <div className="flex flex-col md:flex-row p-12 justify-between items-center z-10 relative">
           <h2 className="text-green-800 text-xl md:text-2xl font-semibold mb-4 md:mb-0">
             Are you a large business looking for custom solutions?
