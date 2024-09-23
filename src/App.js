@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+
 import Homepage from './components/Homepage';
 import Homepage2 from './components/Homepage2';
 import Homepage3 from './components/Homepage3';
@@ -17,7 +17,7 @@ import Footer2 from './components/Footer2';
 function App() {
   return (
     <div className="App">
-     <Router>
+    
        
 <Navbar/>
 
@@ -32,7 +32,7 @@ function App() {
 <Homepage9/>
 <Footer/>
 <Footer2/>
-</Router>
+
     </div>
   );
 }

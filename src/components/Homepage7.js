@@ -6,14 +6,14 @@ const testimonials = [
     title: "Store link",
     image: "https://upload.wikimedia.org/wikipedia/commons/9/97/John_Cena_2024.jpg",
     review:
-     "Printify has transformed my e-commerce business! The quality of their products is consistently impressive. I can't imagine running my store without them!",
+      "Printify has transformed my e-commerce business! The quality of their products is consistently impressive. I can't imagine running my store without them!",
   },
   {
     name: "Quinten Barney",
     title: "Etsy Merchant",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Randy_Orton_April_2018.jpg/800px-Randy_Orton_April_2018.jpg",
     review:
-     "The integration with my Shopify store was seamless and hassle-free. It’s a game-changer for dropshipping! My sales have significantly increased since using Printify.",
+      "The integration with my Shopify store was seamless and hassle-free. It’s a game-changer for dropshipping! My sales have significantly increased since using Printify.",
   },
   {
     name: "Nikki",
@@ -41,22 +41,20 @@ const testimonials = [
     title: "Store link",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/John_Cena_and_Nikki_Bella_at_SXSW_Red_Carpet_premiere_of_BLOCKERS_%2826876913048%29_%28cropped%29.jpg/800px-John_Cena_and_Nikki_Bella_at_SXSW_Red_Carpet_premiere_of_BLOCKERS_%2826876913048%29_%28cropped%29.jpg",
     review:
-     "Printify's user-friendly interface makes it easy to create and manage my designs. I can focus more on marketing my products. Highly recommend for any dropshipper!",
+      "Printify's user-friendly interface makes it easy to create and manage my designs. I can focus more on marketing my products. Highly recommend for any dropshipper!",
   },
 ];
 
 const TestimonialCard = ({ image, name, title, review }) => (
-  <div className="flex-shrink-0  w-full lg:w-1/3 p-4">
+  <div className="flex-shrink-0 w-full lg:w-1/3 p-4">
     <div className="h-full p-6 rounded-xl text-center bg-gray-100">
       <img
         alt="testimonial"
         className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
         src={image}
       />
-      {/* Limiting the review to 4 lines */}
       <p className="leading-relaxed line-clamp-4">{review}</p>
       <div className="flex justify-center mt-4">
-        {/* Star Ratings */}
         {[...Array(5)].map((_, index) => (
           <svg
             key={index}
@@ -102,8 +100,8 @@ const Homepage7 = () => {
 
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="relative px-12">
+      <div className="container px-4 md:px-5 py-12 md:py-24 mx-auto">
+        <div className="relative md:px-12">
           {/* Left Scroll Button */}
           <button
             onClick={scrollLeft}
